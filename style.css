@@ -1,0 +1,183 @@
+
+
+.container 
+{
+    display: flex;
+    background-color: black;
+    color: white;
+}
+
+.space
+{
+     min-height: 650px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     overflow: hidden;
+     width: 1000px;
+     
+}
+
+.rocket
+{
+ min-height: 100px;
+ animation : shake 0.2s ease infinite;
+}
+
+@keyframes shake
+{
+    0%,100%
+    {
+        transform: translateY(-2px);
+    }
+    50%
+    {
+        transform: translateY(2px);
+       
+    }
+}
+.rocket::before
+{
+    content: '';
+    position: absolute;
+    transform: translateX(-50%);
+    height: 120px;
+    width: 10px;
+    background: linear-gradient(rgb(3, 194, 247), transparent);
+    left: 50%;
+    bottom: -120px;
+    filter: blur(2px);
+
+}
+
+.star
+{
+    position: absolute;
+    top : -250px;
+    background: white;
+    animation : moveStars linear infinite;
+}
+
+@keyframes moveStars
+{
+    0%
+    {
+        transform: translateY(0);
+    }
+    100%
+    {
+        transform: translateY(120vh);
+    }
+}
+
+.form
+{
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.txt
+{
+    margin-top: 100px;
+    font-family: 'Star Wars', sans-serif;
+    font-size: 20px;
+    color: white;
+    max-width: 500px;
+
+}
+
+.txt2
+{
+    margin-top: 10px;
+   
+}
+.input
+{
+    margin-top: 40px;
+    border: solid 1px;
+    padding: 5px;
+    border-radius: 5px;
+    max-width: 340px;
+    min-height: 230px;
+    font-family: 'Press Start 2P' ;
+}
+
+.input > form 
+{
+    margin-top: 20px;
+    
+
+}
+
+
+.name
+{
+    display: flex;
+    gap: 35px;
+   
+   
+}
+
+.lbtxt
+{
+    flex: 0;
+    font-size: 14px;
+}
+
+p
+{
+    font-size: 12px;
+    min-height: 30px;
+    color:red;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+
+.info
+{
+    display: flex;
+    gap: 35px;
+    margin-top: 30px;
+    
+}
+
+.password
+{
+    display: flex;
+    gap: 35px;
+}
+
+.login
+{
+    display: flex;
+    gap: 6px;
+}
+
+.footer
+{
+    margin-top: 20px;
+}
+
+button
+{
+    margin-top: 20px;
+    margin-left: 20px;
+    max-width: 150px;
+    min-height: 30px;
+    background-color: red;
+}
+
+.login
+{
+    margin-bottom: 20px;
+}
+
+a
+{
+    text-decoration: none;
+    color: red;
+}
